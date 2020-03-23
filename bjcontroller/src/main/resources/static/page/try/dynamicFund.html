@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的资金</title>
+    <script type="text/javascript" src="../../sourceCode/xiaozhu.js"></script>
+    <script type="text/javascript" src="../../sourceCode/jquery.js"></script>
+    <script type="text/javascript" src="../../sourceCode/echarts.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#main").html("我太难了");
+            // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('main'));
+
+            // 指定图表的配置项和数据
+            // var option = {
+            //     title: {
+            //         text: 'ECharts 入门示例'
+            //     },
+            //     tooltip: {},
+            //     legend: {
+            //         data:['销量']
+            //     },
+            //     xAxis: {
+            //         data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+            //     },
+            //     yAxis: {},
+            //     series: [{
+            //         name: '销量',
+            //         type: 'bar',
+            //         data: [5, 20, 36, 10, 10, 20]
+            //     }]
+            // };
+
+            //异步获取资金数据
+            var monthStr = [];
+            var amountValue = [];
+            var option = {
+                title: {
+                    text: 'ECharts 入门示例'
+                },
+                tooltip: {show: true},
+                legend: {
+                    data: ['剩余欠款图', "加油每一天"]
+                },
+                xAxis: {
+                    data: []
+                },
+                yAxis: {},
+                series: [{
+                    name: '剩余欠款',
+                    type: 'line',
+                    data: [],
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true, //开启显示
+                                position: 'top', //在上方显示
+                                textStyle: { //数值样式
+                                    color: 'black',
+                                    fontSize: 12
+                                }
+                            }
+                        }
+                    }
+
+                }]
+            };
+            var tempData=[];
+            $("#getMonthRecord").click(function () {
+                searchMonthFund();
+            });
+            searchMonthFund();
+
+            function searchMonthFund() {
+                $.ajax({
+                    type: "GET",
+                    url: "/myFund/monthRecord",
+                    contentType: "application/json; charset=utf-8",
+                    // data: JSON.stringify(json), /*传给后端的数据格式json*/
+                    dataType: "json",	/*后端返回的数据格式json*/
+                    success: function (data) {
+                        console.log(typeof data);
+                        console.log(data);
+                        //console.log()
+                        var responseArray = data;
+                        if (responseArray.length > 0) {
+                            monthStr=[];
+                            amountValue=[];
+                            for (var i = 0; i < responseArray.length; i++) {
+                                tempData=responseArray;
+                                monthStr.push(responseArray[i].monthStr);
+                                amountValue.push(responseArray[i].arrAmount);
+                            }
+                            option.xAxis.data = monthStr;
+                            option.series[0].data = amountValue;
+                            myChart.setOption(option);
+                        }
+                    },
+                    error: function (message) {
+                        console.log(message);
+                    }
+                });
+            };
+            // 使用刚指定的配置项和数据显示图表。
+            // myChart.setOption(option);
+            /**
+             * echarts事件
+             */
+            myChart.on('click', function (params) {
+              if(tempData[params.dataIndex].nodeFlag==0){
+                  window.confirm("该月份没有其他信息，请先添加信息");
+              }else{
+                 // window.open('fundDetail.html?monthID='+tempData[params.dataIndex].id, 'new', 'location=no, toolbar=no');
+                  $("body").append("<iframe src='fundDetail.html?monthID="+tempData[params.dataIndex].id+"'></iframe>");
+              }
+            });
+            $("#changeToBar").click(function () {
+                option.series[0].type="bar";
+                myChart.setOption(option);
+            })
+            $("#changeToLine").click(function () {
+                option.series[0].type="line";
+                myChart.setOption(option);
+            })
+            /**
+             * 异步获得图表数据
+             */
+        })
+    </script>
+</head>
+<body>
+欢迎来到神奇的表格世界！！
+<!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+<div id="main" style="width: 1000px;height:400px;"></div>
+<div id="toolbar">
+    <button id="getMonthRecord">获取数据</button>
+    <button id="changeToBar">柱状图查看</button>
+    <button id="changeToLine">折线图查看</button>
+</div>
+</body>
+</html>

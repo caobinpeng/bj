@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的资金</title>
+    <script type="text/javascript" src="../../sourceCode/xiaozhu.js"></script>
+    <script type="text/javascript" src="../../sourceCode/jquery.js"></script>
+    <script type="text/javascript" src="../../sourceCode/echarts.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var idParam=getQueryString("monthId");
+            if(idParam){
+                $.ajax({
+                    type: "GET",
+                    url: "/myFund/monthDetail?monthId="+idParam,
+                    contentType: "application/json; charset=utf-8",
+                    // data: JSON.stringify(json), /*传给后端的数据格式json*/
+                    dataType: "json",	/*后端返回的数据格式json*/
+                    success: function (data) {
+                        console.log(data);
+                    },
+                    error: function (message) {
+                        console.log(message);
+                    }
+                });
+            }
+
+        })
+        function getQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if(r != null) return decodeURI(r[2]);
+            return null;
+        }
+    </script>
+</head>
+<body>
+欢迎来到神奇的表格世界！！
+<!--<table border="1">-->
+<!--    <th>-->
+<!--        <td></td>-->
+<!--        <td></td>-->
+<!--    <th>-->
+<!--    <tr>-->
+<!--        <td>row 2, cell 1</td>-->
+<!--        <td>row 2, cell 2</td>-->
+<!--    </tr>-->
+<!--</table>-->
+</div>
+</body>
+</html>
