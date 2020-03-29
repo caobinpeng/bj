@@ -1,2 +1,3 @@
-com\binpeng\upup2020\MyBootApplication.class
+com\binpeng\upup2020\controller\MyFundController.class
 com\binpeng\upup2020\controller\LoveJin.class
+com\binpeng\upup2020\MyBootApplication.class

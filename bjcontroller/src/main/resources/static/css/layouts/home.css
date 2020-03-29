@@ -1,0 +1,12 @@
+/*
+ * 首页样式
+ */
+#towork{width:580px;height: 240px;margin:auto;margin-top: 8%;border:1px solid #DADADA;
+    box-shadow: 1px 1px 1px 1px #DADADA;border-radius: 2px ;text-align: center;font-size: 14px;padding-top: 40px;
+}
+#towork .btn_org{width: 160px;height: 40px;margin-top: 20px;}
+.workdate{height: 50px;line-height: 50px; display: inline-block;width:100%;}
+/**
+ * 欢迎页样式
+ */
+/*#welcomePage{background: url(../../images/welcomePage.png);}*/

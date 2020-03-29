@@ -1,0 +1,64 @@
+
+.userInfoQuery{
+	padding-bottom: 1px;
+}
+
+.userInfoQuery tr th{
+	text-align:right;
+	line-height:35px;
+}
+.userInfoQuery .titles{
+	height:35px;
+	line-height:35px;
+	background: #eee;
+	padding-left:10px;
+	margin-bottom:10px;
+}
+.userInfoQuery .infoPart{
+ 	border: 1px solid #d1d1d1; 
+ 	box-sizing:border-box;
+    width: 100%;
+    margin: 0px auto 20px;
+    border-radius:4px;
+    padding-bottom:10px;
+}
+.userInfoQuery table{
+	width:94%;
+	padding:10px 0px;
+	    
+}
+.userInfoQuery tr .text{
+	width:80%;
+	padding:5px 5px;
+	font: 14px Arial;
+	background-color: rgb(255, 255, 255);
+}
+.userInfoQuery button{
+	padding:5px 15px;
+	border: 1px solid #cccccc;
+	border-radius:4px;
+	background:#fff;
+	margin-left:5px;
+}
+.ui-jqgrid .ui-jqgrid-htable th div{
+	height:auto;
+}
+.cardInfoDetail .buttons{
+	margin-top:20px;
+	text-align:center;
+	padding-bottom:20px;
+}
+.cardInfoDetail .buttons button{
+	padding:5px 15px;
+	border: 1px solid #cccccc;
+	border-radius:4px;
+	background:#fff;
+}
+
+.showUserInfo {
+    width: 890px;
+    margin: 19px auto;
+    overflow: hidden;
+    min-height: 380px;
+    font-size: 14px;
+}

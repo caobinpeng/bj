@@ -1,0 +1,62 @@
+.wt-img-list {
+    width:100%;
+    clear:both;
+    margin-left: 0 !important;
+    display: block;
+}
+
+ul.wt-img-list > li{
+    list-style-type: none;
+    float: left;
+    width: 100px;
+    margin-right: 10px;
+}
+/*图片列表容器样式*/
+.wt-img-container {
+    position:relative;
+}
+    .wt-img-container:hover
+    {
+        cursor:pointer;
+    }
+.wt-img-container:hover .wt-img-delete {
+    display:block;
+}
+/*图片列表图片样式*/
+img.wt-img-preview {
+    height: 75px;
+    width: 100px;
+    border-width: 0px;
+    border: 1px solid #efefef;
+}
+
+img.wt-img-detail{
+    height: 100%;
+    width: 100%;
+    border-width: 0px;
+}
+/*删除按钮*/
+.wt-img-delete {
+    position:absolute;
+    top: 2px;
+    float: right;
+    right: 2px;
+    width: 14px;
+    height: 14px;
+    line-height: 0;
+    margin: 0;
+    border: 0 none;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-image: url("../../js/plugins/uploadify/imgdel.png");
+    display:none;
+}
+#divImage{
+    display:inline-block;
+    /* float:left;
+    margin-left: 15px; */
+    max-width: 350px;
+}

@@ -34,7 +34,7 @@ public class MyFundRecordDao {
      * @return
      */
     public List<FundDetail> searchMonthDetail(String monthId) {
-        String sql="select monthId,detailId,fundMoney,fundType,description  from myFundDetail where monthId=?";
+        String sql="select monthId,detailId,fundMoney,fundType,description,transTime  from myFundDetail where monthId=?";
         return jdbcTemplate.query(sql, BeanPropertyRowMapper.newInstance(FundDetail.class),monthId);
     }
 }

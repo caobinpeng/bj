@@ -1,0 +1,25 @@
+/*查询条件div*/
+html,body{background:#FCFCFC;width:100%;height:100%}
+#fill{height:10px;}
+#statistics{margin:auto;width:70%;border: 2px solid #808080;margin-top:30px;overflow: auto;}
+li{padding: 15px 20px}
+.txt{width:97px;}
+.orgSelect{border:2px solid #ebebeb;margin:0px 20px 20px;padding:0px;padding-bottom: 10px;}
+.organization{background:#ebebeb;padding:5px 10px;border:2px solid #ebebeb}
+.orgName{padding:10px 0px;border:1px solid #ebebeb;margin:15px 10px;width:600px;padding-left:10px;}
+.cityName,.clientName{float:left;}
+.cityName{width:25%;border:1px solid #ebebeb;border-top:0px;}
+.cityName li{padding:5px 0px;text-align:center;border-top:1px solid #ebebeb;}
+.cityName .cityHead{text-align:center;padding-left:15px;background:#ebebeb;}
+.city_client{border:1px solid #ebebeb;margin-left:10px;width:600px;height:150px;clear:both;display:none;}
+.orgName,.confirm{clear:both;}
+.clientName{width:74%}
+.confirm{margin:10px auto;width:200px;*width:300px;}
+.confirm input,.title input{display:inline-block;*line-height:24px;*height: 26px;}
+
+
+/*查询结果div*/
+#data{display:none;}
+.title{margin:0px 20px;}
+.title h1{text-align:center;}
+.title input{float:right;margin-right:20px;}

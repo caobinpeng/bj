@@ -1,0 +1,20 @@
+.title{font-weight:bold;font-size:13px;}
+.queryCondition{overflow:auto}
+.btnBlock{float:right;margin-right:50px;margin-top:10px;}
+.queryBtn{width:60px;}
+.installedBtn,.refundBtn{display:none;width:80px;}
+#orderInfo table{margin-top:10px;}
+#orderInfo #carInfo{margin-top:0px;}
+td{text-align:left;line-height:30px;}
+.tdLeft{text-align:right;}
+.tableTitle{text-align:left;font-weight:bold;margin:10px 0px;}
+.queryCondition select{height:30px;}
+.queryCondition{padding-left:20px;}
+.queryCondition span{display:inline-block;margin-top:10px;}
+.queryCondition span input,.queryCondition span select{margin-right:20px;}
+.btn_blue span{margin-top:0px;}
+.checkState{display:inline-block;float:right;}
+#orderDetail{width:100%;}
+#orderInfo{padding:20px;}
+.operateBtn{}
+.Wdate{cursor:pointer;}

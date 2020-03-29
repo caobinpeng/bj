@@ -1,0 +1,33 @@
+
+/*图片上传样式覆盖*/
+#uploader .placeholder {
+	min-height: 50px;
+	padding-top: 55px;
+}
+
+#uploader .queueList {
+	margin-left: 0px;
+}
+
+#uploader .statusBar {
+	line-height: 30px;
+}
+
+#uploader .statusBar .btns {
+	line-height: 18px;
+	top: 50px;
+}
+
+#uploader .queueList.filled {
+	padding: 0px;
+	margin-top:10px;
+}
+#uploader .filelist{
+	overflow:hidden;
+}
+#uploader .filelist li {
+	margin-bottom: 0px;
+}
+.wu-example{
+	padding:45px 0px 15px;
+}

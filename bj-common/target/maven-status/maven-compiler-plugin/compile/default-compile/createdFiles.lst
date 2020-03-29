@@ -1,2 +1,5 @@
 com\binpeng\upup\vo\PortalTransOut.class
+com\binpeng\upup\vo\FundDetail.class
 com\binpeng\upup\vo\PoliceCar.class
+com\binpeng\upup\params\FundParams.class
+com\binpeng\upup\vo\FundRecord.class

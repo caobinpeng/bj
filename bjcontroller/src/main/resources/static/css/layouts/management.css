@@ -1,0 +1,129 @@
+/*
+ * 综合管理模块css
+ */
+/**
+ * 公用css
+ */
+/*标题头*/
+.edit_box{height: 50px;line-height: 50px;border-bottom: 1px solid #D9D6D6;}
+.edit_box h3{margin:0;}
+h3{font-size: 20px;font-weight: normal;}
+/*按钮中的字体样式*/
+.m28{margin-left: 28px;}
+.blueColor{color:#008AFF !important;}
+/*领用验证信息*/
+.errorTd{margin-left: 100px;}
+.errorTd span.error{float: left;}
+/*退还样式*/
+.issuediv{
+	border: 1px solid #CCCCCC;
+}
+.ticketissue{
+	width:98%;
+	height:240px;
+	margin-bottom: 10px;
+}
+.obuissue,.equipissue{
+	width:98%;
+	height:240px;
+	margin-bottom: 10px;
+}
+.cardtissue{
+	clear: both;
+	width:98%;
+	height:240px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*标题*/
+.issuetitle{
+	color:#D21E1E;
+	height: 28px;
+	line-height: 28px;
+	width: 150px;
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 14px;
+	float:left;
+}
+.grayLine{border:0 none;border-bottom: 1px solid #ADADAD;width:96%;display:inline-block;margin: auto;height: 0;margin-left: 10px;}
+
+img{cursor: pointer;}
+
+.ui-widget-content a.ui-state-focus{
+	color:#000000;
+	display: inline-block;
+	width: 98%;
+	height: 25px;
+	line-height: 25px;
+}
+
+/*校验错误信息样式*/
+span.error{
+	float: right;
+	height: 28px;
+	line-height: 28px;
+	margin-right: 50px;
+}
+input .error{
+	border:1px solid #FF0000!important;}
+
+
+/*列表查询区域*/
+.top_select{
+	border-top: 1px solid #B5B4B4;
+	border-bottom: 1px solid #B5B4B4;
+	background: #FCFCFC;
+}
+.seltable{
+	width: 100%;
+}
+.seltable th{text-align: right;}
+.seltable th,.seltable td{
+	height: 35px;
+	line-height: 35px;
+}
+
+.ui-tabs .ui-widget-header .ui-state-default{border:1px solid #B5B4B4;border-bottom: 0 none;}
+
+.w140{width:140px;}
+.w150{width: 150px;}
+.w205{width: 205px!important;}
+.Wdate {height: 25px;}
+.wrap-566{ width:566px; margin:19px auto; overflow:hidden; border:#d6d6d6 1px solid; padding:30px;}
+.wrap-566 th{ line-height:46px;}
+
+.btxt4{width:225px;}
+.w100px{ width: 100px !important;}
+.w105px{ width: 105px !important;*position:relative;*margin-top:-4px;}
+.inBlock{*float:left;}
+/**
+ * 调拨
+ */
+.allotTypeDiv{width: 435px;border: 1px solid #ADADAD;border-radius: 4px;}
+.allotTypeSpan{width: 410px;margin: auto;border-bottom: 1px solid #DADADA;}
+.allotTypeLastSpan{border-bottom: 0 none;}
+.w70px{width:70px !important;}
+.w160px{width: 160px !important;}
+.outAllotType{border: 1px solid #ADADAD;border-radius: 4px;height: 170px;overflow-y: auto; margin-bottom: 10px;}
+.btda{border-bottom: 1px solid #DADADA;}
+.outAllotType img{position: absolute;right: 50px;top:7px;}
+.outAllotType span.error{float: none;height:20px;line-height: 20px;display: block;margin: 0;padding: 0;margin-left: 30px;}
+.diabled{background: #DADADA;}
+.ml100{margin-left: 100px;}
+.w290px{width:290px !important;}
+.w190px{width: 190px !important;}
+.w105px{width: 105px !important;}
+.w40px{width:40px !important;*position:relative;*margin-top:-4px;}
+.allottypeTd span.error{float: none;}
+
+/*报故障*/
+.cpw_btnDivCon{width: 497px;height: 75px;border-top: 1px solid #ADADAD;position: absolute;bottom:0;}
+.cpw_btnDiv{position: absolute;right:50px;bottom: 30px;}
+.faultTab span.error{margin-right: 0;}
+
+
+/*标签切换样式*/
+#tabs .ui-widget-header{border: 0 none; background: none;}
+#tabs.ui-widget-content{border: 0 none;}

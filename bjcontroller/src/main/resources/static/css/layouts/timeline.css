@@ -1,0 +1,278 @@
+div,form,input,textarea,p,ul,li,dl,dt,dd,h1,table,h2 {
+	padding:0;
+	margin:0;
+}
+li {
+	list-style-type:none;
+}
+ol,ul {
+	list-style:none;
+}
+input {
+	vertical-align:middle;
+	font-size:100%;
+}
+img {
+	vertical-align:top;
+	border:0;
+}
+em,i {
+	font-style:normal;
+}
+.l {
+	float:left;
+}
+.r {
+	float:right;
+}
+.c {
+	clear:both;
+}
+.o {
+	overflow:hidden;
+}
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+a {
+	color:#666;
+	text-decoration:none;
+}
+a:hover {
+	color:#F60;
+	text-decoration:underline;
+}
+.clearfix {
+	*zoom:1;
+}
+.clearfix:before,.clearfix:after {
+	display:table;
+	content:"";
+}
+.clearfix:after {
+	clear:both;
+}
+.timeline_content {
+	position:relative;
+	margin:0 auto;
+}
+
+ul, li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+	cursor: point;
+}
+hr {
+	height: 0;
+	border-left: none;
+	border-right: 0;
+	border-top: 1px dashed #2d2f34;
+	border-bottom: 1px dashed #474954;
+}
+.top{
+	margin-top: 60px;
+}
+.top img{
+	width: 100%;
+	margin-top: -10px;
+}
+.timeline_content {
+	padding: 50px 0;
+	min-height: 320px;
+	width: 100%;
+}
+.timeline_content .timeline_wrapper {
+	position: relative;
+	margin: 0 auto;
+}
+.timeline_content .light {
+	position: absolute;
+	left: 55px;
+	top: -50px;
+	width: 152px;
+	height: 191px;
+	background: url("../plugins/images/timeline/light-top.png") no-repeat top center;
+}
+.timeline_content .light i {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background: url("../plugins/images/timeline/light.png") no-repeat top center;
+}
+.timeline_content .line-left {
+	position: absolute;
+	left: 0;
+	top: 15px;
+	width: 70px;
+}
+.timeline_content .line-right {
+	position: absolute;
+	right: 0;
+	top: 15px;
+	width: 460px;
+}
+.timeline_content .timeline_main {
+	background: url("../plugins/images/timeline/line-bg.png") repeat-y 249px 0;
+}
+.timeline_content .timeline_main .timeline_title {
+	/*position: absolute;*/
+	/*line-height: 40px;*/
+	width:120px;
+	height: 30px;
+	padding-left: 57px;
+	margin-left: 234px;
+	margin-top: 0;
+	color: #58a6fb;
+	font-size: 22px;
+	background: url("../plugins/images/timeline/clock.png") no-repeat left top;
+}
+.timeline_content .timeline_main .timeline_year {
+	position: relative;
+	z-index: 100;
+}
+.timeline_content .timeline_main .timeline_year h2 {
+	height: 40px;
+	width: 170px;
+	padding-right: 30px;
+	font-size: 24px;
+	line-height: 40px;
+	text-align: right;
+}
+.timeline_content .timeline_main .timeline_year h2 a {
+	color: #58a6fb;
+}
+.timeline_content .timeline_main .timeline_year h2 i{
+	display:block;
+	position:relative;
+	height:0;
+	width:0;
+	left:190px;
+	top:-20px;
+	border-width:6px;
+	border-style:solid;
+	border-color:#59a7fb transparent transparent transparent;
+	-webkit-transition:.5s;
+	-moz-transition:.5s;
+	-ms-transition:.5s;
+	-o-transition:.5s;
+	transition:.5s;
+	-webkit-transform-origin:6px 3px;
+	-moz-transform-origin:6px 3px;
+	-ms-transform-origin:6px 3px;
+	-o-transform-origin:6px 3px;
+	transform-origin:6px 3px
+}
+.timeline_content .timeline_main .timeline_year .timeline_list{
+	margin:10px 0;
+	margin-top: 30px;
+	position:relative;
+	overflow:hidden;
+	-webkit-transition:height 1s cubic-bezier(0.025,0.025,0.000,1.115),opacity 1s;
+	-moz-transition:height 1s cubic-bezier(0.025,0.025,0.000,1.115),opacity 1s;
+	-ms-transition:height 1s cubic-bezier(0.025,0.025,0.000,1.115),opacity 1s;
+	-o-transition:height 1s cubic-bezier(0.025,0.025,0.000,1.115),opacity 1s;
+	transition:height 1s cubic-bezier(0.025,0.025,0.000,1.115),opacity 1s
+}
+.timeline_content .timeline_main .timeline_year .timeline_list ul {
+	bottom: 0;
+}
+.timeline_content .timeline_main .timeline_year .timeline_list ul li {
+	background: url("../plugins/images/timeline/circle.png") no-repeat 244px 50px;
+	/*padding: 30px 0;*/
+	padding:10px 0;
+	color: #ADADAD;
+	height: 90px;
+}
+.timeline_content .timeline_main .timeline_year .timeline_list ul li.highlight {
+	background: url("../plugins/images/timeline/circle.png") no-repeat 242px 31px;
+}
+.cls {
+	zoom: 1;
+}
+.cls:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.timeline_content .timeline_main .timeline_year .timeline_list ul li.highlight .date, .timeline_content .timeline_main .timeline_year .timeline_list ul li.highlight .intro {
+	color: #ADADAD;
+}
+.timeline_content .timeline_main .timeline_year .timeline_list ul li .date,.timeline_content .timeline_main .timeline_year .timeline_list ul li .version{
+	float:left;
+	display:block;
+	clear:left;
+	width:225px;
+	line-height:24px;
+	text-align:right;
+	top:40px;
+	position: absolute;
+}
+
+.timeline_content .timeline_main .timeline_year .timeline_list ul li .lsd_border{
+	border:1px solid #DADADA;
+	width: 60%;
+	height: 80px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	margin-left: 20px;
+	min-width: 580px;
+}
+.timeline_content .timeline_main .timeline_year .timeline_list ul li .lsd_border span{
+	font-size: 14px;
+	color:#8B8989;
+	height: 35px;
+	line-height: 35px;
+	margin-left: 15px;
+}
+.timeline_content .timeline_main .timeline_year .timeline_list ul li .lsd_border span.must{
+	color:#FF0000;
+}
+.timeline_content .timeline_main .timeline_year .timeline_list ul li .date{
+	font-size:16px;
+	line-height:32px;
+	color:#8B8989;
+}
+.timeline_content .timeline_main .timeline_year .timeline_list ul li .intro, .timeline_content .timeline_main .timeline_year .timeline_list ul li .more {
+	float: left;
+	display: block;
+	width: 100%;
+	margin-left: 270px;
+	line-height: 24px;
+	position: absolute;
+}
+ .timeline_content .timeline_main .timeline_year .timeline_list ul li .more img.leftArrow{
+	position: absolute;
+	top:30px;
+	left: 3px;
+}
+.timeline_content .timeline_main .timeline_year .timeline_list ul li .intro {
+	font-size: 18px;
+	line-height: 32px;
+	color: #63d029;
+}
+.timeline_content .timeline_wrapper:first-child .timeline_main .timeline_year.close h2 i{
+	transform:rotate(-90deg);
+	-webkit-transform:rotate(-90deg);
+	-moz-transform:rotate(-90deg);
+	-ms-transform:rotate(-90deg);
+	-o-transform:rotate(-90deg)
+}
+.timeline_content .wrapper:first-child .timeline_main .timeline_year.close .timeline_list{
+	opacity:0;
+	height:0!important;
+}
+.ie7 .timeline_content .timeline_main .timeline_year h2 i{
+	left:40px
+}

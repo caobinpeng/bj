@@ -1,0 +1,170 @@
+body{
+    background:#f9f9f9;
+    font-size:14px;
+    padding:10px;
+}
+table{
+    width:100%;
+}
+th{
+    width:13%;
+    text-align:right;
+}
+th span{
+    display:inline-block;
+    width:100px;
+    text-align:left;
+}
+td{
+    width:27%;
+    vertical-align: middle;
+}
+td button,td button:focus{
+    width:100px;
+    height:200px;
+    padding:0;
+    margin:0;
+    border-radius:5px;
+    border:0;
+    cursor:not-allowed;
+}
+td button.active,td button.active:focus{
+    cursor:pointer;
+    background:#0379fd;
+    color:#fff;
+}
+#form3 .btn{
+    text-align:center;
+    margin-top:20px;
+}
+#form3 button,#form3 button:focus{
+    padding:0;
+    margin:0;
+    border-radius:5px;
+    border:0;
+    cursor:not-allowed;
+    width:300px;
+    height:50px;
+    text-align:center;
+    line-height:50px;
+    margin-top:20px;
+}
+.upImage{
+    cursor:pointer;
+}
+#form3 button.active,#form3 button.active:focus{
+    cursor:pointer;
+    background:#0379fd;
+    color:#fff;
+    margin-top:20px;
+}
+form{
+    background:#fff;
+    padding:10px 15px;
+}
+#form1,#form2{
+    margin-bottom:10px;
+}
+form .title{
+    height:40px;
+    line-height:40px;
+}
+.tabFn i{
+    font-style:normal;
+    padding:2px 15px;
+    border:1px solid #999;
+    border-radius:5px;
+    margin-right:20px;
+    cursor:pointer;
+}
+.tabFn i.active{
+    background:#999;
+    color:#fff;
+}
+th,td{
+    height:30px;
+}
+input[type=text]{
+    border:1px solid #ddd;
+    display:block;
+    width:250px;
+    height:25px;
+    line-height:25px;
+    border-radius:5px;
+}
+#form3 ul{
+    list-style:none;
+    width:90%;
+    height:162px;
+    padding:0;
+    margin:0;
+    border-radius:5px;
+}
+#form3 ul:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+#form3 ul li{
+    width: 87px;
+    height: 87px;
+    float:left;
+    position:relative;
+    border:1px solid #ddd;
+    padding:0;
+    box-sizing:border-box;
+    margin-right:5px;
+}
+#form3 ul li>img{
+    z-index:0;
+    position:relative;
+    width:87px;
+    height:87px;
+}
+#form3 ul li i img{
+    position:absolute;
+    top:0;
+    right:0;
+    z-index:10;
+    width:20px;
+    height:20px;
+    cursor:pointer;
+}
+#form3 td{
+    position:relative;
+}
+#form3 .red{
+    position: absolute;
+    top: 9px;
+    left: -11px;
+    font-style:normal;
+}
+.tabSwitch{
+    display:inline-block;
+    margin-top: -23px;
+    margin-left: 100px;
+}
+.tabSwitch b{
+    padding:3px 8px;
+    border:1px solid #ddd;
+    color:#333;
+    background:#fff;
+    font-weight:normal;
+    margin-right:20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+.tabSwitch b.active{
+    color:#fff;
+    background:#ddd;
+}
+.imgDelete{
+    display:inline-block;
+    font-size:26px;
+    font-style:normal;
+    position: absolute;
+    top: -12px;
+    right: -1px;
+    z-index: 10;
+    cursor:pointer;
+}

@@ -1,0 +1,21 @@
+/**
+ * 资金上解样式
+ */
+/*列表查询区域*/
+.top_select{
+	border: 1px solid #B5B4B4;
+	background: #FCFCFC;
+	height: 60px;
+	margin-top: 10px;
+	*margin-top: 10px;
+	*display: inline-block;
+}
+
+/*
+ * 修改密码
+ */
+.cpw_btnDivCon{width: 497px;height: 75px;border-top: 1px solid #ADADAD;position: absolute;bottom:0;}
+.cpw_btnDiv{position: absolute;right:50px;bottom: 30px;}
+
+/*资金上解列表页面*/
+.ui-jqgrid{margin-left: 0;}
